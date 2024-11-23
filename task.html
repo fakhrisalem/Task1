@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+        .fade-in {
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello! I'm Mona fakhri</h1>
+    <h2>Cairo University_
+        Computer Science and Artificial Intelligence </h2>
+    <h3>ID:20198107</h3>
+    <h4>Front-End Developer </h4>
+    
+    <div id="about" class="content">
+        <p>I am a Front-End Developer student, specializing in HTML, CSS, and JavaScript. I am working on enhancing my skills in 
+            designing innovative and engaging user interfaces. I believe in teamwork and focus on delivering an excellent user 
+            experience. I am committed to continuous learning and exploring new technologies to achieve effective results. </p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const content = document.getElementById("about");
+            setTimeout(() => {
+                content.style.display = "block";
+                content.classList.add("fade-in");
+            }, 1000); 
+        });
+    </script>
+
+</body>
+</html>
